@@ -1,0 +1,2 @@
+# FreeTTS
+FreeTTS familiarization project
