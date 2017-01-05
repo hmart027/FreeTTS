@@ -8,6 +8,7 @@ public class FreeTTStest {
 	 	 
 	 public static void main(String[] args) {
 		 
+		 //Set the location of the Mbrola voices
 		 System.setProperty("mbrola.base", "/media/DATA/SoftwareLibraries/freetts-1.2.2-bin/MBROLA"); 
 	 
 		  String text = "FreeTTS was written by the Sun Microsystems Laboratories "
