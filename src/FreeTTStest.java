@@ -1,10 +1,7 @@
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
-
 import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
-
+@SuppressWarnings("unused")
 public class FreeTTStest {
 
 	 private static final String VOICENAME_kevin = "kevin16";

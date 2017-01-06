@@ -27,6 +27,7 @@ public class TextInputGUI extends JFrame {
 		
 		setTitle("FreeTTS Text Input.");
 		setBounds(0, 0, 500, 500);
+		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		
 		JScrollPane scrollPane = new JScrollPane();
 		scrollPane.setVerticalScrollBarPolicy(ScrollPaneConstants.VERTICAL_SCROLLBAR_ALWAYS);
