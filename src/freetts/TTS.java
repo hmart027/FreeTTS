@@ -12,11 +12,12 @@ public class TTS {
 	private AudioPlayer player;
 	
 	public TTS(){
+		//Set the location of the Mbrola voices
+		System.setProperty("mbrola.base", "/home/bookreader/SoftwareLibraries/freetts-1.2.2-bin/MBROLA"); 
 		VoiceManager voiceManager = VoiceManager.getInstance();
 		voice = voiceManager.getVoice(VOICENAME_kevin);
 		voice.allocate();
 		player = voice.getAudioPlayer();
-		System.out.println(player);
 	}
 	
 	public boolean doTTS(String text){

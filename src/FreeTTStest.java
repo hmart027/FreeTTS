@@ -1,6 +1,8 @@
 import com.sun.speech.freetts.Voice;
 import com.sun.speech.freetts.VoiceManager;
 
+import freetts.TTS;
+
 @SuppressWarnings("unused")
 public class FreeTTStest {
 
@@ -9,10 +11,10 @@ public class FreeTTStest {
 	 public static void main(String[] args) {
 		 
 		 //Set the location of the Mbrola voices
-		 System.setProperty("mbrola.base", "/media/DATA/SoftwareLibraries/freetts-1.2.2-bin/MBROLA"); 
+		 System.setProperty("mbrola.base", "/home/bookreader/SoftwareLibraries/freetts-1.2.2-bin/MBROLA"); 
 	 		  
 		  VoiceManager voiceManager = VoiceManager.getInstance();
-		  final Voice voice = voiceManager.getVoice("mbrola_us2");
+		  final Voice voice = voiceManager.getVoice("mbrola_us1");
 		  voice.allocate();
 		  
 		  voice.setVolume((float) 0.8);
@@ -33,6 +35,9 @@ public class FreeTTStest {
 				}.start();
 			}
 		});
+		 
+//		 TTS tts = new TTS();
+//		 tts.doTTS("Hello World");
 	  	  
 	 }
 	 
